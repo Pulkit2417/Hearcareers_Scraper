@@ -111,7 +111,7 @@ if __name__ =="__main__":
     try:
         df = pd.read_csv("jobs.csv")
         saved_job_links = df['Job Link'].tolist()
-    except FileNotFoundError:
+    except:
         saved_job_links = []
     
     while True:
